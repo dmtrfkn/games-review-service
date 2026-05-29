@@ -1,11 +1,14 @@
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import 'dotenv/config'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   server: {
+    port: 3000,
     proxy: {
-      '/api': 'localhost:4200',
-    },
-  },
-});
+      '/api': process.env.SERVER_URL! || 'http://localhost:4200'
+    }
+  }
+})

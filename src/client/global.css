@@ -1,5 +1,1 @@
-:root {
-  .app {
-    color: red;
-  }
-}
+@import 'tailwindcss';
