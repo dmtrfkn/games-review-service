@@ -1,0 +1,27 @@
+{
+  "name": "fullstack_course",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "drizzle-kit": "^0.31.10",
+    "vite": "^8.0.14"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.5.0",
+    "drizzle-orm": "^0.45.2",
+    "elysia": "^1.4.28",
+    "postcss": "^8.5.15",
+    "postgres": "^3.4.9",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^4.3.0"
+  }
+}
