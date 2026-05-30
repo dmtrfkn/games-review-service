@@ -1,1 +1,19 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-dark: #060e18;
+  --color-accent: #feba87;
+  --color-gray: #787878;
+}
+
+:root {
+  --font-sans: 'Raleway', sans-serif;
+  --font-serif: 'Cinzel', serif;
+}
+
+body {
+  @apply font-sans text-white;
+}
+button {
+  @apply cursor-pointer;
+}
