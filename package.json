@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev:client": "vite",
-    "dev:server": "bun src/server/index.ts",
+    "dev:server": "bun --watch src/server/index.ts",
     "dev": "concurrently -n server,client -c magenta,cyan  \"bun dev:server\" \"bun dev:client\"",
     "build:client": "vite build"
   },
@@ -22,6 +22,7 @@
     "vite": "^8.0.14"
   },
   "dependencies": {
+    "@elysiajs/jwt": "^1.4.2",
     "autoprefixer": "^10.5.0",
     "clsx": "^2.1.1",
     "dotenv": "^17.4.2",
