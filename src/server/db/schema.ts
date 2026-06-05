@@ -27,7 +27,7 @@ export const games = pgTable('games', {
   platform: text('platform'),
 
   subjectiveScore: text('subjective_score').notNull(),
-  metaScore: text('meta_score'),
+  metaScore: integer('meta_score'),
   review: text('review'),
 
   completedAt: timestamp('completed_at').notNull().defaultNow(),
@@ -51,7 +51,7 @@ export const suggestions = pgTable('suggestions', {
   gameName: text('game_name').notNull(),
   posterUrl: text('poster_url'),
 
-  votes: integer('votes').notNull().default(0),
+  votesCount: integer('votesCount').notNull().default(0),
 
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at').notNull().defaultNow()
